@@ -7,8 +7,6 @@ var clitable = require('cli-table');
 module.exports = function(gulp) {
 	gulp.task('task-list', function() {
 		var gulpfile = fs.readFileSync('gulpfile.js').toString();
-		console.log(gulpfile);
-    console.log(gulp.tasks);
 		var table = new clitable({
 				head: ['Task Name', 'Description', 'Dependencies'],
 				chars: {
@@ -26,7 +24,6 @@ module.exports = function(gulp) {
 				}
 				start = gulpfile.lastIndexOf("//", gulpfile.indexOf(gulptask));
 				end = gulpfile.indexOf('\n', start);
-				console.log(gulptask, start, end, gulpfile.indexOf(gulptask), gulptask);
 				if (start !== -1 && end !== -1) {
 					start += 2;
 					comment = gulpfile.substring(start, end);
@@ -34,7 +31,6 @@ module.exports = function(gulp) {
 					comment = "";
 				}
 				deps = gulp.tasks[gulptask].dep.join(", ");
-
 				table.push([gulptask, comment, deps]);
 			}
 		}

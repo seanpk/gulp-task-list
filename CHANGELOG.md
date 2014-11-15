@@ -1,5 +1,9 @@
 # gulp-task-list changelog
 
+## 0.0.2
+
+* Some bug fixing ... the whole "comment-as-description" algorithm needs attention
+
 ## 0.0.1
 
 * Fork!

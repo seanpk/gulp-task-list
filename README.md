@@ -5,8 +5,9 @@ gulp-task-list is a [gulp](http://gulpjs.com) task that lists all tasks in gulpf
 Comments are the single line of comment text immediately before the `gulp.task` call.
 Only tasks defined by a direct call to `gulp.task` with the task name a litteral string, will have their documentation shown.
 
+This is still in need of major improvement ... if you choose to use it, good luck and send me your pull requests!
 
-## gulpfile.js
+## Usage
 
 ```javascript
 
@@ -25,7 +26,7 @@ Only tasks defined by a direct call to `gulp.task` with the task name a litteral
 		});
 ```
 
-### results
+### Results
 
 		$ gulp task-list
 
