@@ -7,6 +7,8 @@ Only tasks defined by a direct call to `gulp.task` with the task name a litteral
 
 This is still in need of major improvement ... if you choose to use it, good luck and send me your pull requests!
 
+[`gulp-showhelp`](https://github.com/sttk/gulp-showhelp) is a better implementation of this kind of functionality, the only down side is that it doesn't list the dependencies.
+
 ## Usage
 
 ```javascript
